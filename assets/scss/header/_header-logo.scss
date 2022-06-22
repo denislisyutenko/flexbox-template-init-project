@@ -1,0 +1,70 @@
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include sm-min {
+        padding: $gap-lg $gap-sm;
+    }
+
+    @include sm {
+        padding: $gap-sm $gap-sm;
+    }
+
+    &__image {
+        display: block;
+
+        @include sm-min {
+            max-width: 400px;
+            margin-bottom: $gap;
+        }
+
+        @include sm-xx {
+            min-width: 300px;
+            margin-bottom: $gap-sm;
+        }
+
+        @include xx {
+            width: 80%;
+            margin-bottom: $gap-sm;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: $gap-sm;
+        font-family: $font-header;
+        font-weight: 300;
+
+        @include sm-min {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.119em;
+        }
+
+        @include sm-xs {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.178em;
+        }
+
+        @include xs {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            letter-spacing: 0.238em;
+        }
+    }
+
+    &__description {
+        letter-spacing: 0.2em;
+        font-weight: 700;
+        text-align: center;
+
+        @include sm {
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            line-height: 1.25em;
+            font-weight: 400;
+        }
+    }
+}

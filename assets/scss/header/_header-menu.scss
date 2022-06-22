@@ -1,0 +1,49 @@
+.header-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba($color-dark, 0.3);
+
+    &__btn {
+        @include sm-min {
+            display: none;
+        }
+        @include sm {
+            display: flex;
+        }
+    }
+
+    &__list {
+        @include unlist;
+        @include sm-min {
+            display: flex;
+        }
+
+        &-item {
+            & a {
+                transition: color 0.5s;
+            }
+            & a:focus,
+            & a:hover {
+                color: $color-accent;
+                background: rgba($color-dark, 0.3);
+                @include text-shadow;
+            }
+
+            &.activ a {
+                color: $color-accent-dark;
+                background: rgba($color-dark, 0.4);
+                @include text-shadow;
+            }
+        }
+
+        &-link {
+            display: block;
+            padding: $gap-xs $gap-sm;
+            margin: 5px;
+            color: $color-light;
+            text-decoration: none;
+            background-repeat: 4px;
+        }
+    }
+}
