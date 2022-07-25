@@ -11,12 +11,74 @@
         @include sm {
             display: flex;
         }
+
+        display: flex;
+        flex-direction: column;
+        background-color: rgba($color-dark, 0.2);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+        &--active .header-menu__btn-row {
+            &:nth-type(1) {
+                top: 9px;
+                transform: rotate(135deg);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                top: 9px;
+                transform: rotate(-135deg);
+            }
+        }
+
+        &-row {
+            margin-top: $gap-sm;
+            position: absolute;
+            top: 0;
+            left: $gap-xs;
+            display: block;
+            width: 60%;
+            height: 2px;
+            transition: 0.25s ease-in-out;
+            transform: rotate(0deg);
+            opacity: 1;
+            border-radius: 2.5px;
+            background-color: $color-light;
+
+            &:nth-of-type(1) {
+                top: 0;
+            }
+            &:nth-of-type(2) {
+                top: 9px;
+            }
+            &:nth-of-type(3) {
+                top: 18px;
+            }
+        }
     }
 
     &__list {
         @include unlist;
         @include sm-min {
             display: flex;
+        }
+
+        @include sm {
+            display: none;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+
+            &--active {
+                display: block;
+            }
         }
 
         &-item {
@@ -26,24 +88,34 @@
             & a:focus,
             & a:hover {
                 color: $color-accent;
-                background: rgba($color-dark, 0.3);
+                background-color: rgba($color-dark, 0.4);
                 @include text-shadow;
             }
 
             &.activ a {
                 color: $color-accent-dark;
-                background: rgba($color-dark, 0.4);
+                background-color: rgba($color-dark, 0.4);
                 @include text-shadow;
+            }
+        }
+
+        &-item:last-of-type {
+            @include sm {
+                padding-bottom: 5px;
             }
         }
 
         &-link {
             display: block;
             padding: $gap-xs $gap-sm;
-            margin: 5px;
-            color: $color-light;
-            text-decoration: none;
             background-repeat: 4px;
+
+            @include sm-min {
+                margin: 5px;
+            }
+            @include sm {
+                margin: 0 5px;
+            }
         }
     }
 }

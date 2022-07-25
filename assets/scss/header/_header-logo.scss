@@ -8,7 +8,7 @@
     }
 
     @include sm {
-        padding: $gap-sm $gap-sm;
+        padding: $gap $gap-sm;
     }
 
     &__image {
