@@ -57,13 +57,13 @@
     }
     &:hover .main-content-item__excerpt {
         display: block;
-        top: 30px;
-        border-color: rgba($color-dark, 0.8);
+        top: $gap;
+        background: rgba($color-dark, 0.75);
         color: $color-light;
     }
     &:hover .main-content-item__title {
         color: $color-accent;
-        border-color: rgba($color-dark, 0.8);
+        background: rgba($color-dark, 0.8);
     }
 
 }

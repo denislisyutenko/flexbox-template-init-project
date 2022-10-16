@@ -82,13 +82,13 @@
         }
 
         &-item {
-            // & a {
-            //     transition: color 0.5s;
-            // }
+            & a {
+                transition: color 0.5s;
+            }
             & a:focus,
             & a:hover {
-                // color: $color-accent;
-                // background-color: rgba($color-dark, 0.4);
+                color: $color-accent;
+                background-color: rgba($color-dark, 0.4);
                 @include text-shadow;
             }
 

@@ -1,6 +1,7 @@
 .main-content {
     &__title {
-        background: line-gradient(
+        
+        background: linear-gradient(
             to right,
             rgba($color-dark, 0.8) 0%,
             rgba($color-dark, 0.5) 90%,
