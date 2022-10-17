@@ -10,7 +10,7 @@
     @include xs {
         order: 2;
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: $gap-sm;
     }
 }
 
@@ -50,6 +50,10 @@
         border: none;
         border-right: 1px solid rgba($color-light, 0.1);
         background-color: transparent;
+        
+        &:focus {
+          outline: none;
+        }
       }
     }
 
@@ -61,7 +65,17 @@
         &__item a {
           display: block;
           padding: 5px 0;
+          transition: padding-left 0.5s;
+          border-radius: 4px;
+            &:hover {
+              padding-left: $gap-xs;
+  
+              color: #e12727;
+              background: rgba(0, 0, 0, 0.5);
+              text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+          }
         }
+        
       }
       
       .widget-text p {
