@@ -1,4 +1,4 @@
-@import "../../libs/normalize.css/normalize.css";
+@use "../../libs/normalize.css/normalize.css";
 
 @import "variables";
 @import "skin";
@@ -19,8 +19,8 @@
 @import "aside/left";
 @import "aside/right";
 
-@import "widgets/widgets";
-@import "widgets/search";
-@import "widgets/categories";
-@import "widgets/news";
-@import "footer";
+// @import "widgets/widgets";
+// @import "widgets/search";
+// @import "widgets/categories";
+// @import "widgets/news";
+// @import "footer";

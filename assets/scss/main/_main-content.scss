@@ -31,7 +31,6 @@
     &__body {
         display: flex;
         flex-wrap: wrap;
-        margin: -7.5px -7.5px $gap -7.5px;
-        
+        margin: (-$gap-xxs) (-$gap-xxs) $gap (-$gap-xxs);
     }
 }

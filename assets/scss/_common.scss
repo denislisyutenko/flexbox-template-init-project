@@ -5,7 +5,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: $font-main;
   font-size: $font-size;
   line-height: 1.5em;
@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
   width: 100%;
   max-width: $xl;
   margin: 0 auto;
@@ -42,7 +44,7 @@ a {
 }
 
 p {
-  color: $color-gray;
+  line-height: 2em;
 }
 
 .container {
@@ -71,7 +73,7 @@ p {
     padding-bottom: 10px;
     font-family: $font-header;
     font-weight: 300;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.092em;
     border-bottom: 1px solid rgba($color-dark, 0.4);
   }
 }
