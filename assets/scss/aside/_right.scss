@@ -4,7 +4,7 @@
   margin-bottom: $gap-sm;
 
   @include lg-min {
-    flex: 0 0 240px;
+    flex: 0 0 $right-sidebar-width;
     order: 2;
   }
   @include lg-md {
@@ -20,7 +20,7 @@
 
   .widget-news {
     @include lg-min {
-      width: 240px;
+      width: $right-sidebar-width;
     }
   }
 }

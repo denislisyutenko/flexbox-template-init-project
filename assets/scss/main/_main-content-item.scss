@@ -1,5 +1,5 @@
 .main-content-item {
-    padding: 7.5px;
+    padding: $gap-xxs;
     position: relative;
 
     @include sm-min {
