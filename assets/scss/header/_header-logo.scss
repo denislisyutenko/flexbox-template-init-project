@@ -20,7 +20,7 @@
         }
 
         @include sm-xx {
-            min-width: 300px;
+            max-width: 300px;
             margin-bottom: $gap-sm;
         }
 

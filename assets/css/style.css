@@ -977,7 +977,7 @@ p {
 }
 @media (max-width: 767.8px) and (min-width: 480px) {
   .header-logo__image {
-    min-width: 300px;
+    max-width: 300px;
     margin-bottom: 15px;
   }
   .main-content-item {
