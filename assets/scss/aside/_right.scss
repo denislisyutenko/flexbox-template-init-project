@@ -20,11 +20,10 @@
 
   .widget-news {
     @include lg-min {
-      width: $right-sidebar-width;
+      width: 240px;
     }
   }
 }
-
 .widget-news {
   &__item {
     & a:focus h4,
