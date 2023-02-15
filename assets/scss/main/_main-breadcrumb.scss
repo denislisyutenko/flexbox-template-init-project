@@ -1,28 +1,33 @@
 .main-breadcrumb {
-    width: 100%;
-    margin-bottom: $gap;
-    padding: 8px 12px;
-    text-align: right;
-    letter-spacing: 0.1428em;
-    background: linear-gradient(
-        to right,
-        rgba($color-dark, 0) 0%,
-        rgba($color-dark, 0.8) 100%
-    );
-    border-radius: 7px;
+  width: 100%;
+  margin-bottom: $gap;
+  padding: 8px 12px;
 
-    span {
-        position: relative;
-        color: $color-gray;
-        margin-right: 7px;
-    }
+  text-align: right;
+  letter-spacing: 0.1428em;
 
-    a {
-        font-weight: bold;
-    }
+  border-radius: 7px;
+  background: linear-gradient(
+  to right,
+  rgba($color-dark, 0) 0%,
+  rgba($color-dark, 0.8) 100%
+  );
 
-    i {
+  span {
+    position: relative;
+
+    margin-right: 7px;
+
     color: $color-gray;
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  i {
+    color: $color-gray;
+
     font-weight: bold;
   }
 }

@@ -5,11 +5,12 @@
 }
 
 html {
+  color: $color-light;
   // overflow-x: hidden;
+
   font-family: $font-main;
   font-size: $font-size;
   line-height: 1.5em;
-  color: $color-light;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   width: 100%;
   max-width: $xl;
   margin: 0 auto;
+
   opacity: 1;
   background-color: $color-warning;
   background-image: url(../img/global-bg.jpg);
@@ -37,14 +39,13 @@ h1 {
   font-family: $font-header;
 }
 
-
 a {
   text-decoration: none;
+
   color: $color-light;
 }
 
 p {
-  line-height: 2em;
   color: $color-gray;
 }
 
@@ -58,27 +59,33 @@ p {
 
 .img-responsive {
   display: block;
+
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 .widget {
-  background-color: rgba($color-dark, 0.5);
-  padding: $gap-sm;
-  border-radius: 7px;
   margin: 0 0 $gap-sm;
+  padding: $gap-sm;
 
-  h3 {
+  color: $color-light;
+  border-radius: 7px;
+  background: rgba($color-dark, 0.5);
+
+  & h3 {
     margin-top: 5px;
     padding-bottom: 10px;
+
+    letter-spacing: 0.092em;
+
+    border-bottom: 1px solid rgba($color-dark, 0.4);
+
     font-family: $font-header;
     font-weight: 300;
-    letter-spacing: 0.092em;
-    border-bottom: 1px solid rgba($color-dark, 0.4);
   }
-}
 
-.widget:last-of-type {
-  margin-bottom: 0;
+  p {
+    line-height: 2em;
+  }
 }
